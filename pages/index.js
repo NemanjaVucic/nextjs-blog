@@ -21,6 +21,11 @@ export default function Home({ allPosts }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="robots" content="all" />
+        {/* <meta name="robots" content="noindex,nofollow" />
+        <meta name="googlebot" content="noindex,nofollow" />
+        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+        <meta name="google" content="notranslate" key="notranslate" /> */}
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hy my name is Nemanja Vucic & I am FE dev</p>
