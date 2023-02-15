@@ -29,6 +29,11 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <link
+          rel="canonical"
+          href="https://nextjs-blog-nine-lilac-13.vercel.app/posts"
+          key="canonical"
+        />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
