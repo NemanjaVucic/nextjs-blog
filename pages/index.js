@@ -21,6 +21,22 @@ export default function Home({ allPosts }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="robots" content="all" />
+        {/* <meta name="robots" content="noindex,nofollow" />
+        <meta name="googlebot" content="noindex,nofollow" />
+        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+        <meta name="google" content="notranslate" key="notranslate" /> */}
+
+        {/*When you want to share descriptive links with title, desc & img(video) etc => use Open Graph protocol(og:)*/}
+        <meta property="og:title" content="Social Title for Cool Page" />
+        <meta
+          property="og:description"
+          content="And a social description for our cool page"
+        />
+        <meta
+          property="og:image"
+          content="https://example.com/images/cool-page.jpg"
+        />
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hy my name is Nemanja Vucic & I am FE dev</p>
