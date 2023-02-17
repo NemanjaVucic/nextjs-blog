@@ -30,15 +30,20 @@ export function getSortedPostsData() {
     return result;
   });
   // Sort posts by date
-  return allPostsData.sort(({ date: a }, { date: b }) => {
-    if (a < b) {
-      return 1;
-    } else if (a > b) {
-      return -1;
-    } else {
-      return 0;
+  return allPostsData.sort(
+    (
+      { date: a }: { id: string; date: string },
+      { date: b }: { id: string; date: string }
+    ) => {
+      if (a < b) {
+        return 1;
+      } else if (a > b) {
+        return -1;
+      } else {
+        return 0;
+      }
     }
-  });
+  );
 }
 
 export function getAllPostIds() {
